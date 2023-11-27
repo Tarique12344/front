@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Header from './pages/partials/Header';
 import './Styles/HomePage.css'
+import Footer from './pages/partials/footer';
 
 
 
@@ -21,6 +22,9 @@ class App extends Component {
         <Router>
           <Route exact path='/' component={Home}/>
         </Router>
+        <br />
+        <br />
+      <Footer/>  
       </div>
     )
   }

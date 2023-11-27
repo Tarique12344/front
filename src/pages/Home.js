@@ -5,6 +5,7 @@ import '../pages/partials/footer'
 import queencity from '../img/queencity.jpeg'
 import paulbrownstadium from '../img/Paul-Brown-Stadium.jpg'
 import fireworks from '../img/fireworksCinci.jpg'
+import footer from './partials/footer'
   
 
 
