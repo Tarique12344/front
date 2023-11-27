@@ -6,19 +6,20 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
     font-size: 10px;
-    background: rgba(0, 0, 0, 0.849);
+  
+    background-color: yellow;
    
 }
 
 #perf{
-    padding-top: 200px; 
+    padding-top: 20px; 
      
  }
 
  #landing-text {
     margin: 0;
-    color: white;
+    color: black;
     font-size: 55px;
-    text-shadow: 3px 3px black;
+    text-shadow: 10px 10px 10px black;
     
 }
