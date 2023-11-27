@@ -43,9 +43,41 @@ a {
 }
 
 .slideShow {
-    display: block;
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     height: 540px;
 }
 
+.footer {
+   
+   
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    letter-spacing: 2.5px; 
+  
+  
+
+}
+
+.footer-btn{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+} 
+.center {
+  margin: 0;
+ position:absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navbar-text{
+  text-align: center;
+  font-size: larger;
+}
