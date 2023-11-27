@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-
+import '../pages/partials/Header';
 import '../Styles/HomePage.css'
+import '../pages/partials/footer'
   
 
 
@@ -10,6 +11,7 @@ render(){
       <div onScroll={ this.handleScroll }>
       <section className="home">
           <div id="perf">
+          
                <h1 id="landing-text">Welcome to the city of Cincinnati</h1>
         
           </div>
