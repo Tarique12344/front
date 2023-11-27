@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  background: rgb(238,163,49);
+  background: -moz-linear-gradient(144deg, rgba(238,163,49,1) 20%, rgba(0,0,0,1) 52%, rgba(214,18,18,1) 74%);
+ background: -webkit-linear-gradient(144deg, rgba(238,163,49,1) 20%, rgba(0,0,0,1) 52%, rgba(214,18,18,1) 74%);
+ background: linear-gradient(144deg, rgba(238,163,49,1) 20%, rgba(0,0,0,1) 52%, rgba(214,18,18,1) 74%);
+}
