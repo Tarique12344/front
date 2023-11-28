@@ -27,11 +27,12 @@ render(){
       <img src={fireworks} class="d-block w-100 slideShow" alt="..."/>
     </div>
   </div>
-</div>
+ </div>
+ <h1>Here is some text</h1>
 </div>
 
-    );
-    }
+  );
+ } 
 }
   
   export default Home;
