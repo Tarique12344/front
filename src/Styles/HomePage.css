@@ -52,6 +52,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     height: 440px;
+    width: 440px;
 }
 
 .footer {
@@ -104,6 +105,7 @@ a {
 .card-Text{
   font-size: 25px;
   text-align:center;
+  
 
 }
 
@@ -132,8 +134,8 @@ a {
 
 .header{
   text-align: center;
-  margin-left: 55px;
-  font-size: 27px;
+  margin-left: 3px;
+  font-size: 25px;
   color: white;
   font-weight: 550;
   /* color: #65b5f6; */
@@ -143,6 +145,9 @@ a {
   padding: 0 16px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 50px;
+ text-shadow: 15px 20px 13px black;
+
 }
 li:hover {
   transform: scale(1.1);
@@ -151,7 +156,31 @@ li:hover {
 #homeHeader{
   font-size: 20px;
 }
-
+/* 
 .pictures{
-  height: 340px;
+
+} */
+
+#sports-text{
+  color: white;
+  text-align: center;
+}
+
+/* .sports-cards{
+  height: 250px;
+} */
+
+.picture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+.reds{
+  height: 250px;
+}
+
+.browns{
+  height:250px;
 }

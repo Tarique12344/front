@@ -8,6 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import Header from './pages/partials/Header';
 import './Styles/HomePage.css'
 import Footer from './pages/partials/footer';
+import About from './pages/about';
 
 
 
@@ -16,11 +17,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Header/>
+      
       <br/>
       <br/>
         <Router>
+        <Header/>
           <Route exact path='/' component={Home}/>
+          <Route path='/about' component={About}/>
         </Router>
         <br />
         <br />

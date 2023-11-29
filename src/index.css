@@ -13,10 +13,10 @@ code {
 }
 
 .App{
-  background: rgb(238,163,49);
-  background: -moz-linear-gradient(144deg, rgba(238,163,49,1) 20%, rgba(0,0,0,1) 52%, rgba(214,18,18,1) 74%);
- background: -webkit-linear-gradient(144deg, rgba(238,163,49,1) 20%, rgba(0,0,0,1) 52%, rgba(214,18,18,1) 74%);
- background: linear-gradient(144deg, rgba(238,163,49,1) 20%, rgba(0,0,0,1) 52%, rgba(214,18,18,1) 74%);
+  background: rgb(188,147,85);
+  background: -moz-linear-gradient(0deg, rgba(188,147,85,1) 8%, rgba(0,0,0,1) 43%, rgba(244,86,86,1) 90%);
+  background: -webkit-linear-gradient(0deg, rgba(188,147,85,1) 8%, rgba(0,0,0,1) 43%, rgba(244,86,86,1) 90%);
+  background: linear-gradient(0deg, rgba(188,147,85,1) 8%, rgba(0,0,0,1) 43%, rgba(244,86,86,1) 90%);
 }
 
 .footer-buttons{
