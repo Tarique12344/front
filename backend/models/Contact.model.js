@@ -7,8 +7,6 @@ const contactSchema = new Schema({
     email: { type: String,required: [true, 'Please enter an email'],unique: true,lowercase: true,validate: [isEmail, 'Please enter a valid email']},
     phonenumber:{ type: String, required: [true, 'Please enter phone number'], minLength: [10, 'Mininum is 10 numbers']},
     comment: {type: String}
-}, {
-    timestamps:true,    
 });
 
 const Contact = mongoose.model('Contact', contactSchema );
