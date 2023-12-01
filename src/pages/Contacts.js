@@ -123,10 +123,6 @@ class Contact extends Component {
           <div className="container">
       <input type="checkbox" id="start" />
       <label >
-        {/* <div className="button">
-          Send
-          <i className="fab fa-telegram-plane plane"></i>
-        </div> */}
         <input type="submit" value="send" />
       </label>
     </div>
