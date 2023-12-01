@@ -9,7 +9,7 @@ import Header from './pages/partials/Header';
 import './Styles/HomePage.css'
 import Footer from './pages/partials/footer';
 import About from './pages/about';
-
+import Contact from './pages/Contacts'
 
 
 
@@ -24,6 +24,7 @@ class App extends Component {
         <Header/>
           <Route exact path='/' component={Home}/>
           <Route path='/about' component={About}/>
+          <Route path='/contact' component={Contact}/>
         </Router>
         <br />
         <br />
