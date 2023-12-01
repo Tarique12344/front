@@ -17,7 +17,7 @@ router.route('/add').post((req,res) => {
     });
 
     newAddAttraction.save()
-    .then(() => res.json('Exercise added!'))
+    .then(() => res.json('AddAttraction added!'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 

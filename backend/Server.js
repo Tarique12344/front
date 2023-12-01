@@ -18,7 +18,13 @@ connection.once('open', () => {
 })
 
 const ContactsRouter= require('./routes/Contacts');
+const AddAttractionsRouter= require('./routes/AddAttractions');
+const AttractionsRouter= require('./routes/Attractions1');
+
+
 app.use('/contact', ContactsRouter);
+app.use('/addattraction', AddAttractionsRouter);
+app.use('/attractions', AttractionsRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
