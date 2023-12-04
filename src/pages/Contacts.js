@@ -10,6 +10,14 @@ import '../Styles/contact.css'
 import queencity from '../img/queencity.jpeg'
 import paulbrownstadium from '../img/Paul-Brown-Stadium.jpg'
 import downtowncinci from '../img/downtownCinci.jpg'
+import garden from '../img/Garden.webp'
+import market from '../img/Market.jpg'
+
+
+
+
+
+
 
 class Contact extends Component {
     constructor (props){
@@ -77,6 +85,12 @@ class Contact extends Component {
         </div>
         <div className="carousel-item">
         <img src={downtowncinci} class="d-block w-100 slideShow" id='HomePage' alt="..."/>
+        </div>
+        <div className="carousel-item">
+        <img src={garden} class="d-block w-100 slideShow" id='HomePage' alt="..."/>
+        </div>
+        <div className="carousel-item">
+        <img src={market} class="d-block w-100 slideShow" id='HomePage' alt="..."/>
         </div>
       </div>
      </div>

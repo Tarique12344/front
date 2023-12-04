@@ -6,7 +6,7 @@ import '../../Styles/footer.css';
     return (
         <footer>
         <h2 className='footer'>Cincinnati World Tour</h2>
-        <p className='footer'>Welcome to the Cincinnati World Tour! A wonderfule place to explore our attractions in Cincinnati. View our page and see what attractions fit you!</p>
+        <p className='footer'>Welcome to the Cincinnati World Tour! A wonderful place to explore our attractions in Cincinnati. View our page and see what vacations or attractions fit you!</p>
         <h2 className="footer">Tyrese West</h2>
         <div className="footer-buttons-container justify-content-center">
         <a className="btn btn-dark btn-social  footer-buttons" href="https://www.facebook.com/profile.php?id=100085323807515" aria-label="Parveen Anand Facebook Profile">facebook<i className="fab fa-facebook-f social-buttons"></i></a>
@@ -16,7 +16,7 @@ import '../../Styles/footer.css';
         <a className="btn btn-dark btn-social mx-2 footer-buttons" href="https://github.com/dashboard" aria-label="Parveen Anand Github Profile">Github<i class="fab fa-linkedin-in"></i></a>
         </div>
         <br />
-        <h2 className="footer">Tarique El-shamy</h2>
+        <h2 className="footer">Tarique El-Shamy</h2>
         <div className="footer-buttons-container justify-content-center">
         <a className="btn btn-dark btn-social mx-2 footer-buttons" href="https://www.facebook.com/profile.php?id=100085323807515" aria-label="Parveen Anand Facebook Profile footer-buttons">facebook<i class="fab fa-facebook-f"></i></a>
         <br />
