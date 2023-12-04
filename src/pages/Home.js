@@ -19,7 +19,8 @@ import kingsisland from '../img/kingsisland.jpg'
 import bangels from '../img/Bangels.png'
 import fcc from '../img/FCC.png'
 import cyclone from '../img/Cyclone.png'
-
+import wall from '../img/wall.jpg'
+import signamerican from '../img/sign-american.png'
 
 
 class Home extends Component{
@@ -37,7 +38,13 @@ render(){
       <img src={paulbrownstadium} class="d-block w-100 slideShow" id='homePage'  alt="..."/>
     </div>
     <div className="carousel-item">
-    <img src={downtowncinci} class="d-block w-100 slideShow" id='HomePage' alt="..."/>
+    <img src={downtowncinci} class="d-block w-100 slideShow" id='homePage' alt="..."/>
+    </div>
+    <div className="carousel-item">
+    <img src={wall} class="d-block w-100 slideShow" id='homePage' alt="..."/>
+    </div>
+    <div className="carousel-item">
+    <img src={signamerican} class="d-block w-100 slideShow" id='homePage' alt="..."/>
     </div>
   </div>
  </div>
@@ -172,6 +179,7 @@ render(){
             </div>
           </div>
         </div>
+        </div>
         <br />
         <br />
         <br /> 
@@ -231,7 +239,7 @@ render(){
         </div>
       </div>
   </div>
-  </div>
+ 
 
 
 

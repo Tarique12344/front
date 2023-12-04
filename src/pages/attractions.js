@@ -1,3 +1,6 @@
+import React, { Component } from 'react';
+import './partials/footer';
+import './partials/Header';
 import React, { Component } from 'react'
 
  class Attractions extends Component {

@@ -19,7 +19,7 @@ const bookingSchema = new Schema({
         validate: [isEmail, 'Please enter a valid email']
     },
     phonenumber: {
-        type: Number,
+        type: String,
         required: [true, 'Please enter phone number'],
         minLength: [10, 'Mininum is 10 numbers']
     },
@@ -27,14 +27,15 @@ const bookingSchema = new Schema({
         type: Date,
         required: true
     },
-    time: {
-        type: Date,
-        required: true
-    },
+    // time: {
+    //     type: Date,
+    //     required: true
+    // },
     comment: {type: String}
-}, {
-    timestamps: true,
-});
+})
+// }, {
+//     timestamps: true,
+// });
 
 const Booking = mongoose.model('Booking', bookingSchema);
 
