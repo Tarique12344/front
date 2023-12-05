@@ -3,6 +3,8 @@ import '../../Styles/HomePage.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { Link } from 'react-router-dom'
+import '../../Styles/header.css'
+import smallplane from '../../img/smallPlane.png'
 
 
  class Header extends Component {
@@ -11,7 +13,10 @@ import { Link } from 'react-router-dom'
   
     <nav className="navbar navbar-expand-lg navbar-text ">
         <div className="container">
-        
+        <div className="firework"></div>
+        <div className="firework"></div>
+        <div className="firework"></div>
+        <img src={smallplane} className='logo' alt=''/>
             <h1 className="header" id="homeheader">Welcome to Cincinnati World Tour</h1>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
