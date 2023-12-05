@@ -7,6 +7,13 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import '../Styles/booking.css'
 
+//img
+import queencity from '../img/queencity.jpeg'
+import paulbrownstadium from '../img/Paul-Brown-Stadium.jpg'
+import wall from '../img/wall.jpg'
+import signamerican from '../img/sign-american.png'
+import downtown from '../img/downtownCinci.jpg'
+
 
 
 
@@ -94,6 +101,29 @@ class Booking extends Component {
           
   render() {
     return (
+
+      <div onScroll={ this.handleScroll } id="homePage">
+    
+      <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src={queencity} class="d-block w-100 slideShow" id='homePage' alt="..."/>
+    </div>
+    <div className="carousel-item">
+      <img src={paulbrownstadium} class="d-block w-100 slideShow" id='homePage'  alt="..."/>
+    </div>
+    <div className="carousel-item">
+    <img src={downtown} class="d-block w-100 slideShow" id='homePage' alt="..."/>
+    </div>
+    <div className="carousel-item">
+    <img src={wall} class="d-block w-100 slideShow" id='homePage' alt="..."/>
+    </div>
+    <div className="carousel-item">
+    <img src={signamerican} class="d-block w-100 slideShow" id='homePage' alt="..."/>
+    </div>
+  </div>
+ </div>
+
    <div className='container'>
         <form onSubmit={this.onSubmit} style={{width: '100%'}}>
          <div className="form-group">
@@ -130,6 +160,7 @@ class Booking extends Component {
       </label>
     </div>
         </form>
+      </div>
       </div>
     );
   }
