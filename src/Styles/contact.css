@@ -49,6 +49,10 @@ input[type=text], select, textarea {
     /* align-items: center; */
     /* width: 100vw; */
     /* height: 100vh; */
+    margin-right: 500px;
+    margin-left: auto;
+
+   
   }
   
   .button {
