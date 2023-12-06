@@ -12,6 +12,7 @@ import About from './pages/about';
 import Addattractions from './pages/addattractions';
 import Booking from './pages/booking'
 import Contact from './pages/Contacts'
+import AttractionsList from './pages/attractions';
 
 
 
@@ -29,6 +30,7 @@ class App extends Component {
           <Route path='/addattractions' component={Addattractions}/>
           <Route path='/booking' component={Booking}/>
           <Route path='/contact' component={Contact}/>
+          <Route path='/attractions' component={AttractionsList}/>
         </Router>
         <br />
         <br />
