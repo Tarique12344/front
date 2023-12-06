@@ -134,7 +134,7 @@ a {
 
 .header{
   text-align: center;
-  margin-right: 10px;
+  margin-right: 15px;
   font-size: 25px;
   color: white;
   font-weight: 550;
@@ -156,10 +156,10 @@ li:hover {
 #homeHeader{
   font-size: 20px;
 }
-/* 
-.pictures{
 
-} */
+.pictures{
+ border-radius: 10px;
+}
 
 #sports-text{
   color: white;

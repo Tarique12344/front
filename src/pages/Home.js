@@ -31,7 +31,7 @@ render(){
     
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
-    <div className="carousel-item active">
+    <div className="carousel-item active pciutr">
       <img src={queencity} class="d-block w-100 slideShow" id='homePage' alt="..."/>
     </div>
     <div className="carousel-item">
@@ -44,7 +44,7 @@ render(){
     <img src={wall} class="d-block w-100 slideShow" id='homePage' alt="..."/>
     </div>
     <div className="carousel-item">
-    <img src={signamerican} class="d-block w-100 slideShow" id='homePage' alt="..."/>
+    <img src={signamerican} class="d-block w-100 slideShow " id='homePage' alt="..."/>
     </div>
   </div>
  </div>
@@ -130,7 +130,7 @@ render(){
         <div className="row">
           <div className="col-md-6">
             <div className="">
-              <img src={findlaymarket} className=" picture browns" alt="..." />
+              <img src={findlaymarket} className=" pictures browns picture" alt="..." />
               <div className="card-body">
                 <h5 className="card-Text" id='sports-text'>Findlay Market</h5>
                 <p className="card-Text" id='sports-text'>
@@ -144,7 +144,7 @@ render(){
           </div>
           <div className="col-md-6">
             <div className="">
-              <img src={americansign} className=" picture browns" alt="..." />
+              <img src={americansign} className=" pictures browns picture" alt="..." />
               <div className="card-body">
                <h5 className="card-Text" id='sports-text'>American Sign Museum</h5>
                 <p className="card-Text" id='sports-text'>
@@ -156,7 +156,7 @@ render(){
           </div>
           <div className="col-md-6">
             <div className="">
-              <img src={zooanimal} className="picture browns" alt="..." />
+              <img src={zooanimal} className="pictures browns picture" alt="..." />
               <div className="card-body">
                 <h5 className="card-Text" id="sports-text"> the Cincinnati Zoo & Botanical Garden</h5>
                 <p className="card-Text" id='sports-text'>
@@ -168,7 +168,7 @@ render(){
           </div>
           <div className="col-md-6">
             <div className="sports-cards">
-              <img src={kingsisland} className=" picture browns" alt="..."/>
+              <img src={kingsisland} className=" pictures browns picture" alt="..."/>
               <div className="card-body">
                 <h5 className="card-Text" id='sports-text'>Kings Island</h5>
                 <p className="card-Text" id='sports-text'>
