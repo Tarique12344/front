@@ -1,6 +1,7 @@
 const express = require('express');
 const cors =require('cors');
 const mongoose =require('mongoose');
+const axios = require('axios');
 
 require('dotenv').config();
 
@@ -35,3 +36,20 @@ app.use('/attractions', AttractionsRouter);
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
+
+
+const options = {
+  method: 'GET',
+  url: 'https://forecast9.p.rapidapi.com/',
+  headers: {
+    'X-RapidAPI-Key': 'cc95c5ec40msh3a922f0274ab9bdp14553ajsnc9173b7303b5',
+    'X-RapidAPI-Host': 'forecast9.p.rapidapi.com'
+  }
+};
+
+try {
+	const response = await axios.request(options);
+	console.log(response.data);
+} catch (error) {
+	console.error(error);
+}

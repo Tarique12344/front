@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import '../pages/partials/Header';
 import '../Styles/HomePage.css'
-import '../pages/partials/footer'
+import '../pages/partials/footer';
+import '../pages/weather'
 
 
 
@@ -234,11 +235,27 @@ render(){
                 </p>
               
               </div>
+              <div class="container">
+        <div class="input">
+          <input type="text " class="inputValue" placeholder="Enter Location"></input>
+            <button class="button"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="displayWeather">
+            <h1 class="temp">----°C</h1>
+            <p class="desc">---</p>
+        </div>
+   
+    </div>
+    <script src="./api.js"></script>
+    
             </div>
           </div>
         </div>
+  
       </div>
   </div>
+  
  
 
 
