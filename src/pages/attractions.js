@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import React, { Component } from 'react'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 
 const Attractions = props => (
@@ -53,7 +55,7 @@ const Attractions = props => (
     return (
       <div>
         <h3>Attractions</h3>
-        <table className="table">
+        {/* <table className="table">
           <thead className="thead-light">
             <tr>
               <th>Title</th>
@@ -65,7 +67,11 @@ const Attractions = props => (
           <tbody>
             { this.attractionsList() }
           </tbody>
-        </table>
+        </table> */}
+        <div className="attractionsContainer">
+        
+          {this.attractionsList()}
+        </div>
       </div>
     )
   }
