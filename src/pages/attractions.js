@@ -1,8 +1,10 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import axios from 'axios';
 import React, { Component } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import "../Styles/attractions.css"
+
 
 
 const Attractions = props => (
@@ -11,9 +13,9 @@ const Attractions = props => (
     <td>{props.attractions.address}</td>
     <td>{props.attractions.description}</td>
     <td>{props.attractions.ratings}</td>
-    <td>
+    {/* <td>
       <Link to={"/edit/"+props.attractions._id}>edit</Link> | <a href="/" onClick={() => { props.deleteAttractions(props.attractions._id) }}>delete</a>
-    </td>
+    </td> */}
   </tr>
 )
 
@@ -21,7 +23,7 @@ const Attractions = props => (
   constructor(props) {
     super(props);
 
-    this.deleteAttractions = this.deleteAttractions.bind(this)
+    // this.deleteAttractions = this.deleteAttractions.bind(this)
 
     this.state = {attractions: []};
   }
@@ -36,18 +38,18 @@ const Attractions = props => (
       })
   }
 
-  deleteAttractions(id) {
-    axios.delete('http://localhost:5000/' + 'attractions/'+id)
-      .then(response => { console.log(response.data)});
+  // deleteAttractions(id) {
+  //   axios.delete('http://localhost:5000/' + 'attractions/'+id)
+  //     .then(response => { console.log(response.data)});
 
-    this.setState({
-      attractions: this.state.attractions.filter(el => el._id !== id)
-    })
-  }
+  //   this.setState({
+  //     attractions: this.state.attractions.filter(el => el._id !== id)
+  //   })
+  // }
 
   attractionsList() {
     return this.state.attractions.map(currentattractions => {
-      return <Attractions attractions={currentattractions} deleteattractions={this.deleteattractions} key={currentattractions._id}/>;
+      return <Attractions attractions={currentattractions} key={currentattractions._id}/>;
     })
   }
 
@@ -69,8 +71,7 @@ const Attractions = props => (
           </tbody>
         </table> */}
         <div className="attractionsContainer">
-        
-          {this.attractionsList()}
+        {this.attractionsList()}
         </div>
       </div>
     )
