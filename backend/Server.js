@@ -38,18 +38,18 @@ app.listen(port, () => {
 });
 
 
-const options = {
-  method: 'GET',
-  url: 'https://forecast9.p.rapidapi.com/',
-  headers: {
-    'X-RapidAPI-Key': 'cc95c5ec40msh3a922f0274ab9bdp14553ajsnc9173b7303b5',
-    'X-RapidAPI-Host': 'forecast9.p.rapidapi.com'
-  }
-};
+// const options = {
+//   method: 'GET',
+//   url: 'https://forecast9.p.rapidapi.com/',
+//   headers: {
+//     'X-RapidAPI-Key': 'cc95c5ec40msh3a922f0274ab9bdp14553ajsnc9173b7303b5',
+//     'X-RapidAPI-Host': 'forecast9.p.rapidapi.com'
+//   }
+// };
 
-try {
-	const response = await axios.request(options);
-	console.log(response.data);
-} catch (error) {
-	console.error(error);
-}
+// try {
+// 	const response = await axios.request(options);
+// 	console.log(response.data);
+// } catch (error) {
+// 	console.error(error);
+// }

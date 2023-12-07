@@ -17,6 +17,7 @@ import AttractionsList from './pages/attractions';
 
 
 
+
 class App extends Component {
   render() {
     return (
