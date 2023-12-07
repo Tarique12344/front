@@ -13,6 +13,7 @@ import Addattractions from './pages/addattractions';
 import Booking from './pages/booking'
 import Contact from './pages/Contacts'
 import AttractionsList from './pages/attractions';
+import Weather from './pages/weather';
 
 
 
@@ -32,6 +33,7 @@ class App extends Component {
           <Route path='/booking' component={Booking}/>
           <Route path='/contact' component={Contact}/>
           <Route path='/attractions' component={AttractionsList}/>
+          <Route path='/weather' component={Weather}/>
         </Router>
         <br />
         <br />

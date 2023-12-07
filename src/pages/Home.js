@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {Component, useEffect, useState} from 'react';
 import '../pages/partials/Header';
 import '../Styles/HomePage.css'
 import '../pages/partials/footer';
-import '../pages/weather'
+import Weather from './weather';
 
 
 
@@ -25,7 +25,9 @@ import signamerican from '../img/sign-american.png'
 
 
 class Home extends Component{
+  
 render(){
+  
     return(
    
       <div onScroll={ this.handleScroll } id="homePage">
@@ -235,16 +237,8 @@ render(){
                 </p>
               
               </div>
-              <div class="container">
-        <div class="input">
-          <input type="text " class="inputValue" placeholder="Enter Location"></input>
-            <button class="button"><i class="fas fa-search"></i></button>
-        </div>
-        
-        <div class="displayWeather">
-            <h1 class="temp">----°C</h1>
-            <p class="desc">---</p>
-        </div>
+              <Weather />
+
    
     </div>
     <script src="./api.js"></script>
@@ -254,7 +248,7 @@ render(){
         </div>
   
       </div>
-  </div>
+
   
  
 
