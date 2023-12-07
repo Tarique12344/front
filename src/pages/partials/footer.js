@@ -18,11 +18,11 @@ import '../../Styles/footer.css';
         <br />
         <h2 className="footer">Tarique El-Shamy</h2>
         <div className="footer-buttons-container justify-content-center">
-        <a className="btn btn-dark btn-social mx-2 footer-buttons" href="https://www.facebook.com/profile.php?id=100085323807515" aria-label="Parveen Anand Facebook Profile footer-buttons">facebook<i class="fab fa-facebook-f"></i></a>
+        <a className="btn btn-dark btn-social mx-2 footer-buttons" href="!#" aria-label="Parveen Anand Facebook Profile footer-buttons">facebook<i class="fab fa-facebook-f"></i></a>
         <br />
-        <a className="btn btn-dark btn-social mx-2 footer-buttons" href="https://www.linkedin.com/in/tyrese-west-5b22361ab/ " aria-label="Parveen Anand LinkedIn Profile">LinkedIn<i class="fab fa-linkedin-in"></i></a>
+        <a className="btn btn-dark btn-social mx-2 footer-buttons" href="https://www.linkedin.com/in/tarique-el-shamy-5b2ba9285/ " aria-label="Parveen Anand LinkedIn Profile">LinkedIn<i class="fab fa-linkedin-in"></i></a>
         <br />
-        <a className="btn btn-dark btn-social mx-2 footer-buttons" href="https://github.com/dashboard" aria-label="Parveen Anand Github Profile">Github<i class="fab fa-linkedin-in"></i></a>
+        <a className="btn btn-dark btn-social mx-2 footer-buttons" href="https://github.com/" aria-label="Parveen Anand Github Profile">Github<i class="fab fa-linkedin-in"></i></a>
         </div>
         <br />
         &copy;

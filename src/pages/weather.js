@@ -36,33 +36,33 @@
 
 import React, { Component } from 'react'
 
-class Weather extends Component {
-    state= {
-        weatherData: ""
-    }
-    componentDidMount(){
-        this.fetchWeatherData();
-    }
-    fetchWeatherData = () => {
-        fetch( `http://api.openweathermap.org/data/2.5/weather?q=Cincinnati,us&appid=c2ec68b928b81de7d16b995e3c59a452`)
-        .then(res => res.json())
-        .then(data => {
-            this.setState({
-                weatherData: data
-            })
-        })
-    }
+// class Weather extends Component {
+//     state= {
+//         weatherData: ""
+//     }
+//     componentDidMount(){
+//         this.fetchWeatherData();
+//     }
+//     fetchWeatherData = () => {
+//         fetch( `http://api.openweathermap.org/data/2.5/weather?q=Cincinnati,us&appid=c2ec68b928b81de7d16b995e3c59a452`)
+//         .then(res => res.json())
+//         .then(data => {
+//             this.setState({
+//                 weatherData: data
+//             })
+//         })
+//     }
 
-  render() {
-    return (
-      <div>
-      <h1></h1>
-      {[this.state.weatherData.main]}
-      </div>
-    )
-  }
-}
-export default Weather
+//   render() {
+//     return (
+//       <div>
+//       <h1></h1>
+//       {[this.state.weatherData.main]}
+//       </div>
+//     )
+//   }
+// }
+// export default Weather
 
 
 
