@@ -117,18 +117,7 @@ class Contact extends Component {
           <label  className='text'>Email</label>
           <input type="text" id="lname" name="lastname" placeholder="Your email here.." value={this.state.email} onChange={this.onChangeEmail}/>
           
-          {/* <label  className='text'>Phone Number</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your phone number.."/> */}
-          
-{/*       
-          <label for="country" className="text">Options</label>
-          <select id="country" name="country" class="sg-input-menu">
-            <option value="location">Location</option>
-            <option value="foods">Foods</option>
-            <option value="services">Services</option>
-            <option value="hotels">Hotels</option>
-            <option value="museums">Museams</option>
-          </select> */}
+        
       
           <label  className="text">Questions or comments</label>
           <textarea id="subject" name="subject" placeholder="Write something.." value={this.state.question} onChange={this.onChangeQuestion}></textarea>
