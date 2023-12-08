@@ -1,56 +1,67 @@
-import React, { useState } from react
+import React, { useState, useEffect } from "react";
+import DailyWeather from "./DailyWeather";
 
+function Weather() {
+  const [weatherData, setWeatherData] = useState();
 
+  async function getWeather() {
+        const url =
+          "https://weatherapi-com.p.rapidapi.com/forecast.json?q=Cincinnati&days=3";
+        const options = {
+          method: "GET",
+          headers: {
+            "X-RapidAPI-Key":
+              "cc95c5ec40msh3a922f0274ab9bdp14553ajsnc9173b7303b5",
+            "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
+          },
+        };
 
-// function Weather() {
-//   const [weatherData, setWeatherData] = useState();
+        fetch(url, options)
+          .then((res) => res.json())
+          .then((res) => {
+            setWeatherData(res);
+            console.log(res);
+          })
+          .catch((err) => console.log(err));
+  }
 
-//       await fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
-//       .then(res => res.json())
-//       .then(result => {
-//         setData(result)
-//         console.log(result);
-//       });
-//     }
-//     fetchData();
-//   }, [lat,long])
-  
-//   return (
-//     <div className="weather">
-    
-    
-//   </div>
-// );
-// }
+  useEffect(() => {
+    getWeather();
+  }, []);
 
+  if (weatherData) console.log(weatherData.forecast.forecastday);
+  // const entries = Object.entries(weatherData);
 
-// class Weather extends Component {
-//     state= {
-//         weatherData: ""
-//     }
-//     componentDidMount(){
-//         this.fetchWeatherData();
-//     }
-//     fetchWeatherData = () => {
-//         fetch( `http://api.openweathermap.org/data/2.5/weather?q=Cincinnati,us&appid=c2ec68b928b81de7d16b995e3c59a452`)
-//         .then(res => res.json())
-//         .then(data => {
-//             this.setState({
-//                 weatherData: data
-//             })
-//         })
-//     }
+  // entries.forEach(([key, value]) => {
+  //   console.log(`${key}: ${value}`);
+  // })
+  return (
+    <div className="container new-middle">
+      <div className="container">
+        <div className="row">
+          {weatherData ? (
+            weatherData.forecast.forecastday.map((weatherData, i) => {
+              return (
+                <DailyWeather
+                  key={i}
+                  dateNum={weatherData.date}
+                  dayIcon={weatherData.day.condition.icon}
+                  tempHigh={weatherData.day.maxtemp_f}
+                  tempLow={weatherData.day.mintemp_f}
+                />
+              );
+            })
+          ) : (
+            <h2>Loading...</h2>
+          )}
+        </div>
+      </div>
+    </div>
 
-//   render() {
-//     return (
-//       <div>
-//       <h1></h1>
-//       {[this.state.weatherData.main]}
-//       </div>
-//     )
-//   }
-// }
-// export default Weather
+  );
+}
+
+export default Weather;
 
 
 

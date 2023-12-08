@@ -56,7 +56,7 @@ const Attractions = props => (
   render() {
     return (
       <div>
-        <h3>Attractions</h3>
+        <h1 className="title">Attractions</h1>
         {/* <table className="table">
           <thead className="thead-light">
             <tr>

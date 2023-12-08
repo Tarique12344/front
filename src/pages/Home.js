@@ -2,7 +2,7 @@ import React, {Component, useEffect, useState} from 'react';
 import '../pages/partials/Header';
 import '../Styles/HomePage.css'
 import '../pages/partials/footer';
-// import Weather from './weather';
+import Weather from './weather';
 
 
 
@@ -237,7 +237,7 @@ render(){
                 </p>
               
               </div>
-              {/* <Weather /> */}
+            
 
    
     </div>
@@ -246,7 +246,7 @@ render(){
             </div>
           </div>
         </div>
-  
+    <Weather />
       </div>
 
   
