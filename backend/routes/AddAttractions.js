@@ -1,5 +1,6 @@
 const router = require('express').Router();
-let AddAttraction = require('../models/AddAttraction.model');
+// let AddAttraction = require('../models/AddAttraction.model');
+let AddAttraction = require('../models/Attractions.model')
 
 router.route('/').get((req,res) => {
     AddAttraction.find()
@@ -8,13 +9,22 @@ router.route('/').get((req,res) => {
 });
 
 router.route('/add').post((req,res) => {
-    const attraction = req.body.attraction;
-    const address= req.body.address;
+    // const attraction = req.body.attraction;
+    // const address= req.body.address;
 
-    const newAddAttraction = new AddAttraction({
-        attraction,
-        address,
-    });
+    // const newAddAttraction = new AddAttraction({
+    //     attraction,
+    //     address,
+    // });
+
+  
+    const title = req.body.title;
+    const address = req.body.address;
+    const description = req.body.description;
+    const ratings = req.body.ratings;
+
+
+
 
     newAddAttraction.save()
     .then(() => res.json('AddAttraction added!'))

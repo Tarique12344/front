@@ -29,7 +29,7 @@ app.use('/booking', bookingRouter)
 
 
 app.use('/contact', ContactsRouter);
-app.use('/addattraction', AddAttractionsRouter);
+// app.use('/addattraction', AddAttractionsRouter);
 app.use('/attractions', AttractionsRouter);
 
 
