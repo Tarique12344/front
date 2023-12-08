@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
-import DailyWeather from "./DailyWeather";
+import React, { useState, useEffect } from 'react';
+import DailyWeather from './DailyWeather'
+
+
 
 function Weather() {
   const [weatherData, setWeatherData] = useState();
@@ -62,6 +64,7 @@ function Weather() {
 }
 
 export default Weather;
+
 
 
 

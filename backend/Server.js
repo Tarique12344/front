@@ -17,19 +17,15 @@ const connection = mongoose.connection;
 connection.once('open', () => {
     console.log("MongoDB database connection established successfully");
 })
-
-
-const ContactsRouter= require('./routes/Contacts');
-const AddAttractionsRouter= require('./routes/AddAttractions');
-const AttractionsRouter= require('./routes/Attractions1');
-
-const bookingRouter = require('./routes/Bookings')
+const bookingRouter =  require('./routes/Bookings')
+const ContactsRouter = require('./routes/Bookings');
+const AttractionsRouter = require('./routes/Attractions1')
 app.use('/booking', bookingRouter)
 
 
 
 app.use('/contact', ContactsRouter);
-app.use('/addattraction', AddAttractionsRouter);
+// app.use('/addattraction', AddAttractionsRouter);
 app.use('/attractions', AttractionsRouter);
 
 

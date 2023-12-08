@@ -1,4 +1,4 @@
-import React, {Component, useEffect, useState} from 'react';
+import React, {Component} from 'react';
 import '../pages/partials/Header';
 import '../Styles/HomePage.css'
 import '../pages/partials/footer';
